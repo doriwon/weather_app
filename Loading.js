@@ -1,10 +1,10 @@
 import React from "react";
-import { StyleSheet, Text, View, StatusBar } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native'; //, StatusBar 
 
 export default function Loading() {
     return (
         <View style={styles.container}>
-            <StatusBar barStyle="dark-content" />
+            {/* <StatusBar barStyle="dark-content" /> */}
             <Text style={styles.text}>Getting the beautiful weather</Text>
         </View>
     )
@@ -15,10 +15,10 @@ const styles = StyleSheet.create({
         justifyContent: "flex-end",
         paddingHorizontal: 30,
         paddingVertical: 100,
-        backgroundColor: "#FDF6AA"
+        backgroundColor: "#22a6b3"
     },
     text: {
-        color: "#2c2c2c",
+        color: "#fff",
         fontSize: 30
     }
 })
